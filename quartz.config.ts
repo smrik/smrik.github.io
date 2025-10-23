@@ -8,16 +8,16 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Patrik's Zettelkasten",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: null,
     },
     locale: "en-US",
-    baseUrl: "smrik.github.io/smrik.github.io",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "smrik.github.io",
+    ignorePatterns: ["private", "templates", ".obsidian", ".trash", "Attachments/**/*.md"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
