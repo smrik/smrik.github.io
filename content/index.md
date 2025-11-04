@@ -7,6 +7,9 @@
 ## About
 Why this blog: I don't really know. I think that just putting some of my ideas and thoughts out there (not that they are actually anything special - I'm not that arrogant) will help me organize my knowledge and will also keep my accountable to keep this growing. Hopefully it will also add some meaning to my random adventures of going down the rabbit hole on just about any topic. So I guess if I write a blog post about it, I will feel at least some sense of accomplishment and it won't feel like a complete waste. And writing has never been a strong suit of mine, so this will hopefully make me a better writer (well or at least make my writing passable).
 
+## Posts
+- [[Inflation perceptions]]
+
 ## Topics I intend to cover
 
 ##### AI & Singularity
