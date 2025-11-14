@@ -6,7 +6,10 @@ on:
       - main
       - v4
   workflow_dispatch:
- 
+  
+env:
+  THEME_NAME: wikipedia
+  
 permissions:
   contents: read
   pages: write
@@ -28,6 +31,8 @@ jobs:
           node-version: 22
       - name: Install Dependencies
         run: npm ci
+      - name: Fetch Quartz Theme
+        run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $wikipedia
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
