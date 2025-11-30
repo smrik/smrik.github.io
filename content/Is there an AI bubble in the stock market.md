@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Is there an AI bubble in the stock market","created":"2025-11-05T21:54","modified":"2025-11-30T14:27","tags":["stock-market"],"cssclasses":""}
+{"publish":true,"title":"Is there an AI bubble in the stock market","created":"2025-11-05T21:54","modified":"2025-11-30T15:03","tags":["stock-market"],"cssclasses":""}
 ---
 
 # Is there an AI bubble in the stock market
@@ -12,17 +12,20 @@ While I understand the valuations look scary, I do believe in AI and that most p
 <iframe width="500" height="350" src="https://www.youtube.com/embed/V6dQxQBHiB0?si=Avyx5L9dvgI1sW1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen align="center"></iframe>
 </div>
 
-> [!info] 
+> [!cite] 
 > **Chandler :** All right, check out this bad boy. 12 megabytes of RAM. 500 megabyte hard drive. Built-in spreadsheet capabilities and a modem that transmits at over 28,000 b.p.s.
 > **Phoebe :** Wow. What are you gonna use it for?
 > **Chandler :** [doggedly] Games and stuff.
 > 
-> *Friends, Season 2 Episode 8* -  [Script Source](https://www.fanfr.com/scripts/saison2/friendsgeneration2.php?nav=script&version=vo&episodescript=208) 
+>    *Friends, Season 2 Episode 8* -  [Script Source](https://www.fanfr.com/scripts/saison2/friendsgeneration2.php?nav=script&version=vo&episodescript=208) 
 
 So this episode aired in November 16, 1995 [^1] as per IMDB. Almost exactly 30 years ago at the time of writing this blog. My smartphone (and most flagships) currently has 12 GB of RAM. My phone - not my laptop (which has 32 GB). That is 1000 times as much in 30 years. If this development trend stays the same, in another 30 years (2055), the common persons smartphone (well it probably won't actually used in the same way, but for the sake of the argument, let's just imagine) would have 12 TB of RAM. That is outrageous, more than the storage of some modern servers. 
 
 # Progression of technology
-![[Attachments/images/Pasted image 20251115224327.png|140px]]
+
+![[Attachments/images/Pasted image 20251115224327.png|right|140]]
+
+### Moore's law
 
 Gordon Moore, co-founder of Intel Corporation, forecasted in 1965 that the number of components (transistors) per integrated circuit would keep doubling every year for at least the next decade. In 1975 he revised it to a doubling every two years, which works out to a CAGR of about 44%.
 
