@@ -1,3 +1,154 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// ==========================================================================
+// CUSTOM CALLOUTS (Modern "Glass" Look)
+// ==========================================================================
+.callout {
+  border: 1px solid var(--lightgray);
+  border-left-width: 5px; /* Thicker accent border on left */
+  border-radius: 8px;
+  background-color: var(--light); /* Light background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  margin: 1.5rem 0;
+  overflow: hidden; /* Keeps children inside rounded corners */
+  transition: transform 0.2s ease;
+
+  // Hover effect for interactivity
+  &:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  // Title bar styling
+  .callout-title {
+    background-color: rgba(0, 0, 0, 0.03); /* Very subtle grey background */
+    padding: 0.75rem 1rem;
+    font-family: var(--headerFont);
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  // Content padding
+  .callout-content {
+    padding: 1rem 1.25rem;
+    
+    // Fix for paragraphs inside callouts having weird margins
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Specific Callout Colors (Overrides Quartz Defaults)
+  &[data-callout="cite"], &[data-callout="quote"] {
+    border-left-color: #9b59b6; /* Purple for citations */
+    .callout-title { background-color: rgba(155, 89, 182, 0.1); }
+  }
+  
+  &[data-callout="note"] {
+    border-left-color: #3498db; /* Blue */
+    .callout-title { background-color: rgba(52, 152, 219, 0.1); }
+  }
+
+  &[data-callout="warning"] {
+    border-left-color: #e67e22; /* Orange */
+    .callout-title { background-color: rgba(230, 126, 34, 0.1); }
+  }
+}
+
+
+// ==========================================================================
+// TABLES (Centered & Styled)
+// ==========================================================================
+table {
+  margin: 2rem auto; /* Center the table horizontally */
+  border-collapse: collapse;
+  width: auto;       /* Let table shrink to fit content... */
+  min-width: 60%;    /* ...but keep it at least 60% wide */
+  max-width: 100%;
+  border-radius: 8px;
+  overflow: hidden;  /* Rounded corners for the whole table */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-size: 0.95rem;
+
+  thead {
+    background-color: var(--tertiary); /* Use Quartz accent color */
+    color: white; /* Header text color */
+    
+    th {
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 15px;
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid var(--lightgray);
+      transition: background-color 0.1s;
+      
+      &:last-of-type {
+        border-bottom: 2px solid var(--tertiary);
+      }
+      
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.02); /* Highlight row on hover */
+      }
+    }
+
+    td {
+      padding: 12px 15px;
+      color: var(--darkgray);
+    }
+  }
+}
+
+// Center tables specifically inside callouts if they aren't already
+.callout-content table {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+// ==========================================================================
+// IMAGES (Centered & Captions)
+// ==========================================================================
+
+// Standard images
+img {
+  border-radius: 8px;
+  display: block;
+  margin: 1.5rem auto; /* Center image */
+  max-width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Nice shadow */
+}
+
+// Images inside figures (Obsidian style)
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+
+  img {
+    margin-bottom: 0.5rem; /* Space between image and caption */
+  }
+
+  figcaption {
+    font-style: italic;
+    color: var(--gray);
+    font-size: 0.9rem;
+    text-align: center;
+    opacity: 0.8;
+  }
+}
+
+// Special fix: If you have small icons or inline images, don't center/shadow them
+p > img[width^="2"], p > img[width^="1"] { 
+  display: inline-block; 
+  margin: 0;
+  box-shadow: none;
+  vertical-align: middle;
+}
