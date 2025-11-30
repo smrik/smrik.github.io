@@ -18,6 +18,7 @@
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   }
 
+
   // Title bar styling
   .callout-title {
     background-color: rgba(0, 0, 0, 0.03); /* Very subtle grey background */
@@ -116,13 +117,13 @@ table {
 // IMAGES (Centered & Captions)
 // ==========================================================================
 
-// Standard images
-img {
-  border-radius: 8px;
-  display: block;
-  margin: 1.5rem auto; /* Center image */
-  max-width: 100%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Nice shadow */
+
+img{
+    display: block;
+    float: right;
+    margin: 0.5em 1em 0.5em 1em !important;
+	border-radius: 8px;
+    clear: right;
 }
 
 // Images inside figures (Obsidian style)
