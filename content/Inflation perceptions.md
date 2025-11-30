@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Inflation perceptions","created":"2025-10-24","modified":"2025-11-14T22:59:09.868+01:00","tags":["economics","psych","inflation"],"cssclasses":""}
+{"publish":true,"title":"Inflation perceptions","created":"2025-10-24","modified":"2025-11-15T22:41:41.916+01:00","tags":["economics","psych","inflation"],"cssclasses":""}
 ---
 
 # Inflation perceptions
@@ -21,7 +21,7 @@ Spoiler alert: Pretty bad. But let's look at the data to make sure.
 
 
 
-![[Blog files/Inflation perceptions/Inflation_perceptions/graph1_percieved_vs_actual.png]]
+![[Blog files/Inflation perceptions/Inflation_perceptions/graph1_percieved_vs_actual.png|center]]
 
 
 
@@ -29,7 +29,7 @@ So this is quite telling, but I saw some other breakdowns of the data that I cou
 
 ### Inflation perception across age groups
 
-![[Blog files/Inflation perceptions/Inflation_perceptions/inflation_age_fte.png]]
+![[Blog files/Inflation perceptions/Inflation_perceptions/inflation_age_fte.png|center]]
 *quick comment about the median values here: we can see that between 2023 and 2024 some lines are always at 10% - this is because the survey asks for a number and a big group of people just pick 10 percent - it is not an error, despite the weird look*
 
 The percieved inflation stayed much higher for much longer than actual inflation. For 35-54 year olds for example, percieved inflation fell below 10% around december 2023, even though that actual reported inflation fell below 10% approximately a year earlier.
@@ -62,14 +62,14 @@ So this may be very obvious and you will probably conclude that it's food prices
 
 Peoples perceptions are skewed because food is not a significant expense for the average European - 13% of household expenditure based on this data. So we get a biased perspective on the price changes. 
 
-![[Attachments/Pasted image 20251104173615.png]]
+![[Attachments/images/Pasted image 20251104173615.png|center]]
 
 People therefore care too much about food prices, when in reality they are that big of an expense.
 I will show the breakdown of different inflation subsets and how different the reactions to changes in each are. 
 
 We can see that services don't affect consumers' perceptions much, neither do non-energy industrial goods (that is a given I suppose). But what is missing from the graph is energy and I will explain what the deal is with that shortly.
 
-![[Blog files/Inflation perceptions/Inflation_perceptions/perceived_inflation_vs_cpi_components.png]]
+![[Blog files/Inflation perceptions/Inflation_perceptions/perceived_inflation_vs_cpi_components.png|center]]
 
 Energy prices are arguably the most important production input for many business, and will probably grow even more with time (the recent AI boom significantly increased electricity demands). And they have the most spillover effect on the prices of other goods - so they should be what we focus on.
 
@@ -81,7 +81,7 @@ This article for example states that the impact is about 60 percent, but it seem
 I purposefully left out energy out of the graph above. It makes the HICP inflation rates look minimal and the energy prices are the main reason for the inflation (well at least they were in this crisis, I should maybe research different causes further - some other time probably) and should guide our inflation perceptions.
 
 Correlation of month-over-month changes with perceived inflation
-![[Blog files/Inflation perceptions/Inflation_perceptions/irf_HICPvsCoverage_onPerception.png]]
+![[Blog files/Inflation perceptions/Inflation_perceptions/irf_HICPvsCoverage_onPerception.png|center]]
 
 | component | correlation |
 | :-------- | ----------: |
@@ -92,20 +92,20 @@ Correlation of month-over-month changes with perceived inflation
 | Energy    |      -0.029 |
 
 
-![[Blog files/Inflation perceptions/Inflation_perceptions/perceived_inflation_vs_energy.png]]
+![[Blog files/Inflation perceptions/Inflation_perceptions/perceived_inflation_vs_energy.png|center]]
 
 Just to nail the point home a bit more, I made a quick VAR model to test some impulse responses. This is showing changes to peoples perception if energy has shock and if HICP has a shock. 
- ![[Blog files/Inflation perceptions/Inflation_perceptions/irf_HICPvsEnergy_onPerception.png]]
+ ![[Blog files/Inflation perceptions/Inflation_perceptions/irf_HICPvsEnergy_onPerception.png|center]]
 
 
 Just for fun I plotted this as well. It shows people's overestimation of inflation in another way. The solid red line shows how inflation perception changes and the dashed blue one shows how actual HICP changes. Again showing peoples overestimation of inflation change.
 
-![[Blog files/Inflation perceptions/Inflation_perceptions/irf_HICPvsCoverage_onPerception.png]]
+![[Blog files/Inflation perceptions/Inflation_perceptions/irf_HICPvsCoverage_onPerception.png|center]]
 ### The role of the media
 
 I also considered how media portrayal of inflation affects things. This is a quick plot for now, but I will explore that in another article and go more in depth.
 
-![[Blog files/Inflation perceptions/Inflation_perceptions/perceived_inflation_media.png]]
+![[Blog files/Inflation perceptions/Inflation_perceptions/perceived_inflation_media.png|center]]
 
 
 Thanks for reading. Hope you find it as interesting as I do. :)
