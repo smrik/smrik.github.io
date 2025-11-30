@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Is there an AI bubble in the stock market","created":"2025-11-05T21:54","modified":"2025-11-30T01:18","tags":["stock-market"],"cssclasses":""}
+{"publish":true,"title":"Is there an AI bubble in the stock market","created":"2025-11-05T21:54","modified":"2025-11-30T14:27","tags":["stock-market"],"cssclasses":""}
 ---
 
 # Is there an AI bubble in the stock market
@@ -23,8 +23,9 @@ So this episode aired in November 16, 1995 [^1] as per IMDB. Almost exactly 30
 
 # Progression of technology
 
-![[Attachments/images/Pasted image 20251115224327.png|right]]
-There is a well known law in computer engineering called the named after this guy to the right. That is Gordon Moore, co-founder of Intel Corporation. He forecasted in 1965 that the number of components (transistors) per integrated circuits will keep doubling every year for at least the next decade. This did turn out to be true, but in 1975 he changed his forecast for the next years, saying that it will continue to double, but slower, every two years. That amounts to a CAGR of (this calculation is unnecessary right now as the CAGR is just a simple square root of 2, but will come into play later): 
+> [!info] Moore's law
+> <div style="float:right; max-width:150px; margin:0 0 0.5rem 1rem;">![[Attachments/images/Pasted image 20251115224327.png|140]]</div>
+> Gordon Moore, co-founder of Intel Corporation, forecasted in 1965 that the number of components (transistors) per integrated circuit would keep doubling every year for at least the next decade. In 1975 he revised it to a doubling every two years, which works out to a CAGR of about 44%.
 
 $$CAGR(\%) = \sqrt{\frac{Value_{\ t_{1}}}{Value_{\ t_{0}}}}-1 = \sqrt{\frac{2}{1}}-1= 44\%$$
 
