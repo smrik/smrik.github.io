@@ -133,9 +133,13 @@ figure {
   align-items: center;
   margin: 2rem 0;
 
-  img {
-    margin-bottom: 0.5rem; /* Space between image and caption */
-  }
+  img{
+    display: block;
+    float: right;
+    margin: 0.5em 1em 0.5em 1em !important;
+	border-radius: 8px;
+    clear: right;
+}
 
   figcaption {
     font-style: italic;
@@ -144,12 +148,4 @@ figure {
     text-align: center;
     opacity: 0.8;
   }
-}
-
-// Special fix: If you have small icons or inline images, don't center/shadow them
-p > img[width^="2"], p > img[width^="1"] { 
-  display: inline-block; 
-  margin: 0;
-  box-shadow: none;
-  vertical-align: middle;
 }
