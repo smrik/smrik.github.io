@@ -1,5 +1,12 @@
 @use "./base.scss";
 
+html:root {
+  --titleFont: Georgia, "Times New Roman", serif;
+  --headerFont: Georgia, "Times New Roman", serif;
+  --bodyFont: Georgia, "Times New Roman", serif;
+  --codeFont: "Courier New", monospace;
+}
+
 // ==========================================================================
 // CUSTOM CALLOUTS (Modern "Glass" Look)
 // ==========================================================================

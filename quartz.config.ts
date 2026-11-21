@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Patrik's Zettelkasten",
+    pageTitle: "Patrik Šmid · Writing",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -20,22 +20,23 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian", ".trash", "Attachments/**/*.md"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "googleFonts",
-      cdnCaching: true,
+      fontOrigin: "local",
+      cdnCaching: false,
       typography: {
+        // Open Graph images use Google Fonts. Pages use the system fonts in custom.scss.
         header: "Schibsted Grotesk",
         body: "Source Sans Pro",
         code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
+          light: "#f4f0e8",
+          lightgray: "#dcd5c9",
+          gray: "#6f6b64",
+          darkgray: "#3f3b36",
+          dark: "#171717",
+          secondary: "#315c4b",
+          tertiary: "#476b5c",
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#fff23688",
         },
