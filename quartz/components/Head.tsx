@@ -89,9 +89,11 @@ export default (() => {
         <meta name="generator" content="Quartz" />
 
         <link rel="stylesheet" href="https://patriksmid.com/theme/v2.css" spa-preserve />
+        <link rel="stylesheet" href="https://patriksmid.com/theme/shell.css" spa-preserve />
         <meta name="theme-color" content="#f4f0e8" data-patrik-theme-color="" spa-preserve />
         <script spa-preserve dangerouslySetInnerHTML={{ __html: sharedThemeBridge }} />
         <script src="https://patriksmid.com/theme/v2.js" spa-preserve />
+        <script src="https://patriksmid.com/theme/shell.js" defer spa-preserve />
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js
           .filter((resource) => resource.loadTime === "beforeDOMReady")

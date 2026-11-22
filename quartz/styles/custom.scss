@@ -1,4 +1,5 @@
 @use "./base.scss";
+@use "./variables.scss" as layout;
 
 html:root {
   --titleFont: var(--patrik-heading, Georgia, "Times New Roman", serif);
@@ -251,5 +252,22 @@ a.internal, a.tag-link, .graph > .graph-outer {
     height: 1px;
     overflow: hidden;
     clip-path: inset(50%);
+  }
+}
+
+// Keep the Explorer and article readable beside the portfolio rail.
+@media #{layout.$desktop} {
+  html[data-patrik-navigation] .page > #quartz-body {
+    grid-template-columns: 14rem minmax(0, 1fr) 14rem;
+  }
+}
+@media #{layout.$tablet} {
+  html[data-patrik-navigation] .page > #quartz-body {
+    grid-template-columns: 14rem minmax(0, 1fr);
+  }
+}
+@media not all and #{layout.$mobile} {
+  html[data-patrik-navigation] .page > #quartz-body .sidebar {
+    padding-inline: 1rem;
   }
 }
