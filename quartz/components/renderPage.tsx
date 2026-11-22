@@ -236,6 +236,17 @@ export function renderPage(
     <html lang={lang} dir={direction}>
       <Head {...componentData} />
       <body data-slug={slug}>
+        <div class="patrik-sitebar">
+          <div class="patrik-sitebar-inner">
+            <a class="patrik-sitebar-brand" href="https://patriksmid.com/">
+              Patrik Šmid
+            </a>
+            <nav class="patrik-sitebar-links" aria-label="Portfolio">
+              <a href="https://patriksmid.com/writing/">Writing</a>
+              <a href="https://patriksmid.com/projects/">Projects</a>
+            </nav>
+          </div>
+        </div>
         <div id="quartz-root" class="page">
           <Body {...componentData}>
             {LeftComponent}

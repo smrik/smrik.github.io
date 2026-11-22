@@ -1,10 +1,18 @@
 @use "./base.scss";
 
 html:root {
-  --titleFont: Georgia, "Times New Roman", serif;
-  --headerFont: Georgia, "Times New Roman", serif;
-  --bodyFont: Georgia, "Times New Roman", serif;
+  --titleFont: var(--patrik-heading, Georgia, "Times New Roman", serif);
+  --headerFont: var(--patrik-heading, Georgia, "Times New Roman", serif);
+  --bodyFont: var(--patrik-font, Georgia, "Times New Roman", serif);
   --codeFont: "Courier New", monospace;
+}
+
+html:root:not([saved-theme="dark"]) {
+  --light: var(--patrik-bg, #f4f0e8);
+  --lightgray: var(--patrik-line, #dcd5c9);
+  --gray: var(--patrik-muted, #6f6b64);
+  --dark: var(--patrik-ink, #171717);
+  --secondary: var(--patrik-accent, #315c4b);
 }
 
 // ==========================================================================
@@ -154,5 +162,54 @@ figure {
     font-size: 0.9rem;
     text-align: center;
     opacity: 0.8;
+  }
+}
+
+@media (max-width: 800px) {
+  .page > #quartz-body .sidebar.left {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .sidebar.left .page-title {
+    flex-basis: 100%;
+  }
+
+  .sidebar.left .flex-component {
+    gap: 0.5rem !important;
+  }
+
+  .search > .search-button {
+    min-height: 44px;
+  }
+
+  .darkmode,
+  .readermode,
+  button.mobile-explorer {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .darkmode svg,
+  .readermode svg {
+    left: calc(50% - 10px);
+  }
+
+  button.mobile-explorer {
+    justify-content: center;
+  }
+
+  article img,
+  article figure img {
+    float: none;
+    max-width: 100%;
+    height: auto;
+    margin: 0.5em auto !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .page > #quartz-body .sidebar.right {
+    flex-direction: column;
   }
 }
