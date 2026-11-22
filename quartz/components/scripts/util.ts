@@ -8,7 +8,7 @@ export function registerEscapeHandler(outsideContainer: HTMLElement | null, cb: 
   }
 
   function esc(e: HTMLElementEventMap["keydown"]) {
-    if (!e.key.startsWith("Esc")) return
+    if (!e.key.startsWith("Esc") || !outsideContainer?.classList.contains("active")) return
     e.preventDefault()
     cb()
   }
