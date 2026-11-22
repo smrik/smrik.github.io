@@ -225,3 +225,21 @@ figure {
     overflow-wrap: normal;
   }
 }
+
+// Shared site controls and compact navigation. Article content comes from Obsidian.
+.search > .search-button, .search > .search-container > .search-space,
+a.internal, a.tag-link, .graph > .graph-outer {
+  border-radius: var(--patrik-radius, 0);
+}
+@media (max-width: 800px) {
+  .page > #quartz-body .sidebar.left {
+    padding-block: .5rem;
+    gap: .25rem .75rem;
+    border-bottom: 1px solid var(--patrik-line);
+  }
+  .sidebar.left .page-title { margin: 0; }
+  .page .article-title { margin-top: .75rem; }
+  article > :first-child { margin-top: .75rem; }
+  article h2 { margin-block: 1.25rem .5rem; }
+  article ul { margin-block: .5rem; }
+}
