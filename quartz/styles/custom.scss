@@ -243,3 +243,13 @@ a.internal, a.tag-link, .graph > .graph-outer {
   article h2 { margin-block: 1.25rem .5rem; }
   article ul { margin-block: .5rem; }
 }
+
+@media (max-width: 42rem) {
+  .patrik-theme-control .theme-caption {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+}

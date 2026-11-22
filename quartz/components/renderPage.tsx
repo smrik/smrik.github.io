@@ -246,7 +246,7 @@ export function renderPage(
               <a href="https://patriksmid.com/projects/">Projects</a>
             </nav>
             <label class="patrik-theme-control">
-              Theme
+              <span class="theme-caption">Theme</span>
               <select class="patrik-field" data-patrik-theme="">
                 <option value="auto">System</option>
                 <option value="light">Light</option>
