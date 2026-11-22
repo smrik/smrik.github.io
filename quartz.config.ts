@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: null,
     },
     locale: "en-US",
-    baseUrl: "smrik.github.io",
+    baseUrl: "blog.patriksmid.com",
     ignorePatterns: ["private", "templates", ".obsidian", ".trash", "Attachments/**/*.md"],
     defaultDateType: "modified",
     theme: {
