@@ -5,14 +5,19 @@ html:root {
   --headerFont: var(--patrik-heading, Georgia, "Times New Roman", serif);
   --bodyFont: var(--patrik-font, Georgia, "Times New Roman", serif);
   --codeFont: "Courier New", monospace;
-}
-
-html:root:not([saved-theme="dark"]) {
   --light: var(--patrik-bg, #f4f0e8);
   --lightgray: var(--patrik-line, #dcd5c9);
   --gray: var(--patrik-muted, #6f6b64);
   --dark: var(--patrik-ink, #171717);
   --secondary: var(--patrik-accent, #315c4b);
+}
+
+html:root[saved-theme="dark"] {
+  --light: var(--patrik-bg, #171917);
+  --lightgray: var(--patrik-line, #51574f);
+  --gray: var(--patrik-muted, #b7b9ae);
+  --dark: var(--patrik-ink, #f3f0e8);
+  --secondary: var(--patrik-accent, #a5d1b4);
 }
 
 // ==========================================================================
@@ -183,14 +188,12 @@ figure {
     min-height: 44px;
   }
 
-  .darkmode,
   .readermode,
   button.mobile-explorer {
     min-width: 44px;
     min-height: 44px;
   }
 
-  .darkmode svg,
   .readermode svg {
     left: calc(50% - 10px);
   }
@@ -211,5 +214,14 @@ figure {
 @media (max-width: 480px) {
   .page > #quartz-body .sidebar.right {
     flex-direction: column;
+  }
+
+  article {
+    overflow-wrap: anywhere;
+  }
+
+  article .table-container > table {
+    margin-inline: 0;
+    overflow-wrap: normal;
   }
 }

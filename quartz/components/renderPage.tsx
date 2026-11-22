@@ -233,7 +233,7 @@ export function renderPage(
   const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "en"
   const direction = i18n(cfg.locale).direction ?? "ltr"
   const doc = (
-    <html lang={lang} dir={direction}>
+    <html lang={lang} dir={direction} data-patrik-color="">
       <Head {...componentData} />
       <body data-slug={slug}>
         <div class="patrik-sitebar">
@@ -245,6 +245,14 @@ export function renderPage(
               <a href="https://patriksmid.com/writing/">Writing</a>
               <a href="https://patriksmid.com/projects/">Projects</a>
             </nav>
+            <label class="patrik-theme-control">
+              Theme
+              <select class="patrik-field" data-patrik-theme="">
+                <option value="auto">System</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+              </select>
+            </label>
           </div>
         </div>
         <div id="quartz-root" class="page">
